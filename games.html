@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+   
+<title>Compra de Jogos</title>
+    
+    <
+<style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .game {
+            border: 1px solid aqua;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+
+</head
+</head>
+<body>
+    
+   
+<h1>Loja de Jogos</h1>
+    
+   
+<div class="game">
+        
+       
+<h2>Jogo 1</h2>
+        
+        <
+        <img width="100 px" src="games2.jfif">
+<p>Descrição do Jogo 1.</p>
+        
+        <
+
+       
+<p>Preço: R$ 50</p>
+        
+       
+<button onclick="buyGame('Jogo 1', 50)">Comprar</button>
+    
+    </div
+</div>
+
+    
+
+    <
+<div class="game">
+        <h2>Jogo 2</h2>
+        
+        <
+        <img width="100 px" src="games1.jfif">
+<p>Descrição do Jogo 2.</p>
+        <p>Preço: R$ 40</p>
+        
+       
+<button onclick="buyGame('Jogo 2', 40)">Comprar</button>
+    </div>
+
+    
+
+<div class="game">
+        <h2>Jogo 3</h2>
+        
+        <
+
+        <img width="100 px" src="game3.jfif">
+<p>Descrição do Jogo 3.</p>
+        <p>Preço: R$ 60</p>
+        <button onclick="buyGame('Jogo 3', 60)">Comprar</button>
+    
+    </div
+</div>
+
+    
+
+   
+<h2>Resumo da Compra</h2>
+    
+   
+<div id="cart">
+        <!-- O resumo da compra será exibido aqui -->
+    
+    </div
+</div>
+
+    
+
+    <
+<script>
+       
+
+        let cart = [];
+
+        function buyGame(gameName, price) {
+            cart.push({ gameName, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartElement = document.getElementById("
+
+        let cart = [];
+
+        function buyGame(gameName, price) {
+            cart.push({ gameName, price });
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartElement = document.getElementById("cart");
+            let cartHTML = "";
+
+            for (let i = 0; i < cart.length; i++) {
+                cartHTML += `<p>${cart[i].gameName} - R$ ${cart[i].price}</p>`;
+            }
+
+            cartHTML += `<p>Total: R$ ${calculateTotal()}</p>`;
+            cartElement.innerHTML = cartHTML;
+        }
+
+        function calculateTotal() {
+            let total = 0;
+            for (let i = 0; i < cart.length; i++) {
+                total += cart[i].price;
+            }
+            return total;
+        }
+    </script>
+</body>
+
+</
+</html>
+
+
+
+
+
+

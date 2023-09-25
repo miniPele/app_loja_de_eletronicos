@@ -1,0 +1,79 @@
+/*limpando formatação padrão */
+*{
+    margin : 0px;
+    padding : 0px;
+    
+}
+
+ span{
+    color:aqua
+ }
+body{
+    font-size: lem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #e6e6e6fb;
+}
+/* layout */
+#area-cabecalho{
+    background-color:#195853;
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo{
+    padding: 15px;
+}
+
+h1{
+    color: ;
+    font-size: 2.5em;
+}
+.eletro {
+    color: aquamarine;
+}
+/*formataçaõ do menu*/
+
+a{
+    text-decoration: none;
+}
+
+a:link a:visited {
+   color:hsl(239, 69%, 20%);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+#area-cabecalho a:link,  #ares-cabecalho a:visited{
+    color: ;
+    padding: 8px, 12px;
+}
+#area-cabecalho a:hover {
+    color:rgb(25, 0, 255) ;
+    background:#e6e6e6;
+    text-decoration: none;
+}
+    #area-principal{
+        margin: 15px auto;
+        background: rgb(0, 17, 255);
+        width: 920px;
+        color:aqua
+    }
+
+#area-postagem{
+    width:660px ;
+    float: left;
+    background:#195845;
+}
+#area-lateral{
+    background: rgb(0, 255, 21);
+    width: 240;
+    float: right;
+
+}
+#rodape{
+    background:#696969 ;
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}
